@@ -1,0 +1,22 @@
+{
+  "name": "jimp-nodenext",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "run": "node main.bundle.dev.js",
+    "reproduce": "npm run build && npm run run"
+  },
+  "author": "Thomas Strobl (http://thomas-strobl.com/)",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@swc/core": "^1.7.36",
+    "jimp": "^1.6.0",
+    "swc-loader": "^0.2.6",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
